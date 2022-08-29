@@ -18,6 +18,93 @@
       color:#000;
       text-decoration:none;
     }
+
+    /* 기본스타일 */
+    .wrap{
+      padding:10px;
+    }
+    .header{      
+      padding:40px 14px;
+      background-color:#93c;
+    }
+    h1 a{
+      font-size:32px;
+      color:#fff;
+    }
+    .sec{
+      padding:14px;
+      display:flex;
+      flex-flow:row wrap;
+    }
+    .sec-child{
+      width:25%;
+    }
+    .sec-child02{
+      width:50%;
+    }
+    nav li{
+      margin-bottom:7px;
+      padding:7px;
+      background-color:#09c;
+    }
+    nav li:hover{
+      background-color:#069;
+    }
+    nav a{
+      color:#fff;
+    }
+    article{
+      padding:20px 40px;
+    }
+    article h2{
+      margin-bottom:14px;
+      font-size:32px;
+    }
+    aside{
+      padding:32px 14px;
+      background-color:#09c;
+    }
+    aside h2{
+      margin-bottom:14px;
+      font-size:26px;
+      color:#fff;
+      text-align:center;
+    }
+    aside p{
+      margin-bottom:14px;      
+      color:#fff;
+      text-align:center;
+    }
+    .footer{
+      padding:32px;
+      background-color:#069;
+    }
+    address{
+      font-style:normal;
+      color:#fff;
+      text-align:center;
+    }
+
+
+    /* 768px 이하 스타일 */
+    @media (max-width:768px){
+      .sec-child01{
+        width:40%;
+      }
+      .sec-child02{
+        width:60%;
+      }
+      .sec-child03{
+        width:100%;
+      }
+    }
+
+    /* 600px 이하 스타일 */
+    @media (max-width:600px){
+      .sec-child{
+        width:100%;
+      }
+    }
   </style>
 </head>
 <body>
