@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형도형</title>
+  <style>
+    /* 기본스타일(데탑스타일) */
+    .box{
+      width:400px;
+      height:400px;
+      margin: 100px auto;
+      background-color:#f00;
+    }
+
+    /* 테블릿 스타일 */
+    @media (max-width:960px){
+      .box{
+        background-color:#0f0;
+      }
+    }
+
+    /* 모바일 스타일 */
+    @media (max-width:640px){
+      .box{
+        background-color:#00f;
+      }
+    }
+    
+
+    
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
