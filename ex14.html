@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <title>Document</title>
+    <style>
+        /* 기본스타일 모바일 우선 반응형*/
+        .container{
+            width:100%;
+            max-width:960px;
+            margin:0 auto;
+            border-bottom:1px solid black;
+            padding:1em;
+            position:relative;
+        }
+        h1{
+            float:left;
+        }
+        .btn{
+            float:right;
+        }
+        nav{
+            position:absolute;
+            left:0;
+            right:0;
+            top:100%;
+            padding:1em;
+        }
+
+        @media (min-width:960px){
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container clearfix">
+        <h1>hollys</h1>
+        <div class="btn">버튼</div>
+        <nav>
+            <ul>
+                <li>네비메뉴1</li>
+                <li>네비메뉴2</li>
+                <li>네비메뉴3</li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>
