@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+    <style>
+        .box{
+            width:150px;
+            height:150px;
+            margin:20px auto;
+            border:1px solid black;
+            padding:10px;
+        }
+        .box01 div{
+            width:128px;
+            height:128px;
+            background:red;
+        }
+        .box02 div{
+            width:100%;
+            height:100%;
+            background:green;
+        }
+        .box03 div{
+            width:inherit;
+            height:inherit;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">
+        <div>절대값</div>
+    </div>
+    <div class="box box02">
+        <div>비율</div>
+    </div>
+    <div class="box box03">
+        <div>상속</div>
+    </div>
+</body>
+</html>
