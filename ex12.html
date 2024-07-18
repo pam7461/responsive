@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본스타일 데스크탑 */
+        .box{
+            width:1000px;
+            height:500px;
+            margin:0 auto;
+            background:red;
+        }
+
+        /* 테블릿  1199px 이하*/
+        @media (max-width:1199px){
+            .box{
+                width:600px;
+                background:green;
+            }
+        }
+
+        @media (max-width:767px){
+            .box{
+                width:360px;
+                background:blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

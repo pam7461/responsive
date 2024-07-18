@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>미디어쿼리</title>
+    <style>
+        /* 기본스타일 모바일*/
+        h1{
+            font-weight:900;
+            font-size:3em;
+            text-align:center;
+        }
+        div{
+            width:100%;
+            max-width:1000px;
+            height:500px;
+            margin:0 auto;
+            border:1px solid black;
+            background:red;
+        }
+        @media (min-width:768px){
+            /* 테블릿 스타일 768px 이상*/
+            div{background:green;}
+        }
+        @media (min-width:1200px){
+            /* 데스크탑 스타일 1200px*/
+            div{background:blue;}
+        }
+        @media (min-width:1800px){
+            /* 때따큰 스타일 1800px*/
+            div{max-width:100%;}
+        }
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리</h1>
+    <div>
+        "RED"면 모바일<br>"GREEN"이면 테블릿<br>"BLUE"면 데스크탑
+    </div>
+</body>
+</html>
