@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width:90%;
+            margin:0 auto;
+            overflow:hidden;
+        }
+        .header,.sec,.footer{
+            display:inline-block;
+            vertical-align:bottom;
+        }
+        .header{
+            width:100%;
+            height:80px;
+            background:lightcoral;
+            position:relative;
+        }
+        .logo{
+            position:absolute;
+            left:0;
+            top:0;
+            width:200px;
+            height:110px;
+            background:lightcoral;
+        }
+        .sec01{
+            width:50%;
+            height:400px;
+            background:darkcyan;
+        }
+        .sec02{
+            width:25%;
+            height:400px;
+            background:lightgreen;
+        }
+        .sec03{
+            width:25%;
+            height:400px;
+            background:darkkhaki;
+        }
+        .sec04{
+            width:32%;
+            height:400px;
+            background:red;
+        }
+        .sec05{
+            width:32%;
+            height:400px;
+            background:green;
+        }
+        .sec06{
+            width:25%;
+            height:400px;
+            background:blue;
+        }
+        .sec07{
+            width:calc(100% - 32% - 32% - 25%);
+            height:400px;
+            background:yellow;
+        }
+        .footer{
+            width:100%;
+            height:80px;
+            background:gray;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <h1 class="logo"></h1>
+        </header>
+        <section class="sec sec01"></section>
+        <section class="sec sec02"></section>
+        <section class="sec sec03"></section>
+        <section class="sec sec04"></section>
+        <section class="sec sec05"></section>
+        <section class="sec sec06">
+            <article class="art art01"></article>
+            <article class="art art02"></article>
+        </section>
+        <section class="sec sec07"></section>
+        <footer class="footer"></footer>
+    </section>
+</body>
+</html>
