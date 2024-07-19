@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>WEB이란 무엇인가?</title>
+    <style>
+        :root{
+            font-size:14px;
+        }
+        .wrap{
+            overflow:hidden;
+        }
+        .container{
+            max-width:960px;
+            margin:0 auto; 
+            padding:0 10px;           
+        }
+
+
+        .header{
+            border-bottom:2px solid black;
+            padding:20px 0;
+        }
+        .header .container{
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:space-between;
+            align-items:flex-end;
+        }
+        .header h1{
+            width:100%;
+            margin-bottom:24px;
+            font-weight:700;
+            font-size:3em;
+        }
+        .header nav{
+            width:100%;
+            font-size:1.5em;
+        }
+        .header ul{
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .header ul li{
+            width:100%;
+        }
+        
+
+        .sec{
+            border-bottom:2px solid black;
+            padding:80px 0;
+        }
+
+
+
+        .footer{
+            padding:20px 0;
+        }
+
+
+
+
+
+
+        /* 테블릿 */
+        @media (min-width:768px){
+            .header h1{
+                width:auto;
+                margin-bottom:0;
+            }
+            .header nav{
+                width:auto;
+            }
+            .header ul li{
+                width:auto;
+            }
+        }
+
+
+        /* 데스크탑 */
+        @media (min-width:960px){
+            
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <h1><a href="#">Web</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Web</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">javaScript</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="sec">
+            <div class="container"></div>
+        </section>
+        <footer class="footer">
+            <div class="container"></div>
+        </footer>
+    </section>
+</body>
+</html>
