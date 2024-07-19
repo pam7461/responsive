@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+    <style>
+        /* 기본스타일 모바일우선 */
+        .wrapper{
+            max-width:960px;
+            margin:0 auto;
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .header,.sec,.footer{
+            width:100%;
+            border:1px solid black;            
+        }
+        .header{
+            position:relative;
+            height:80px;
+            background:lightcoral;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .sec01{
+            height:300px;
+            background:lightgoldenrodyellow;
+        }
+        .sec02{
+            height:250px;
+            background:lightgreen;
+        }
+        .sec03{
+            height:400px;
+            background:lightpink;
+        }
+        .sec04{
+            height:350px;
+            background:lightseagreen;
+        }
+        .sec05{
+            height:200px;
+            background:darkmagenta;
+        }
+        .sec06{
+            height:300px;
+            background:lightcoral;
+        }
+        .sec07{
+            height:400px;
+            background:lemonchiffon;
+        }
+        .footer{
+            height:80px;
+            background:darkolivegreen;
+        }
+
+
+
+
+        /* 768px 이상 스타일 테블릿 스타일 */
+        @media (min-width:768px){
+            h1{
+                position:absolute;
+                left:0;
+                top:0;
+                width:120px;
+                height:120px;
+                background:red;
+            }
+            .sec{
+                height:auto;
+            }
+            .sec01{
+                width:60%;                
+                height:350px;
+            }
+            .sec02{
+                width:40%;
+            }
+            .sec03{
+                width:40%;
+                height:300px;
+            }
+            .sec04{
+                width:40%;
+            }
+            .sec05{
+                width:20%;
+            }
+            .sec06{
+                width:70%;
+                height:400px;
+            }
+            .sec07{
+                width:30%;
+            }
+        }
+
+
+
+        /* 960px 이상 스타일 데스크탑 스타일 */
+        @media (min-width:960px){
+            .sec{
+                height:auto;
+            }
+            .sec01{
+                width:50%;
+                height:350px;
+            }
+            .sec02{width:25%;}
+            .sec03{width:25%;}
+            .sec04{
+                width:33%;
+                height:250px;
+            }
+            .sec05{width:33%;}
+            .sec06{width:20%;}
+            .sec07{width:14%;}
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <header class="header">
+            <h1>로고</h1>
+        </header>
+        <section class="sec sec01">섹션01</section>
+        <section class="sec sec02">섹션02</section>
+        <section class="sec sec03">섹션03</section>
+        <section class="sec sec04">섹션04</section>
+        <section class="sec sec05">섹션05</section>
+        <section class="sec sec06">
+            <article class="art art01">아티클01</article>
+            <article class="art art02">아티클02</article>
+        </section>
+        <section class="sec sec07">섹션07</section>
+        <footer class="footer">푸터</footer>
+    </section>
+</body>
+</html>
