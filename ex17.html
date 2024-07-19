@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:70%;
+            height:200px;
+            margin:0 auto;
+            border:4px solid black;
+            /* 플래서블 컨테이너 */
+            display:flex;
+            /* 주축 */
+            flex-direction:row;
+            /* 교차축 */
+            flex-wrap:wrap;
+            /* 주축/교차축 */
+            /* flex-flow:direction wrap; */
+            flex-flow:row wrap;
+            flex-flow:row nowrap;
+            flex-flow:column wrap;
+            flex-flow:column nowrap;
+        }
+        .box div:nth-child(1){
+            width:300px;
+            background:red;
+        }
+        .box div:nth-child(2){
+            width:150px;
+            background:green;
+        }
+        .box div:nth-child(3){
+            width:200px;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>    
+</body>
+</html>

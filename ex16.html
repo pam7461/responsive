@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box div{
+            display:inline;
+            /* float:left; */
+        }
+
+        .box01{
+            display:flex;
+            /* 주축방향 가로 */
+            flex-direction:row;
+            flex-direction:row-reverse;
+            /* 주축방향 세로 */
+            flex-direction:column;
+            flex-direction:column-reverse;            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="box01">
+        <div>일</div>
+        <div>이</div>
+        <div>삼</div>
+    </div>
+</body>
+</html>
