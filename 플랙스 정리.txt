@@ -1,0 +1,35 @@
+
+    플러서블박스 = 플랙스박스 = 플랙스컨테이너 = 플랙서블컨테이너
+    display:flex
+
+    주축방향
+    flex-direction:(row,row-reverse,column,column-reverse)
+    
+    교차축사용 유무
+    flex-wrap:(wrap,nowrap)
+ 
+    주축방향 맞춤
+    justify-content:(flex-start,flex-end,center,
+                     space-between,space-around,space-evenly)
+    
+    교차축방향 맞춤(교차축 사용되지 않을때)
+    align-items:(flex-start,flex-end,center)
+    
+    교차축방향 맞춤(교차축 사용될 때)
+    align-content:(flex-start,flex-end,center,
+                   space-between,space-around,space-evenly)
+    
+
+    아이템
+    아이템 순서
+    order:number
+    아이템 비율
+    flex:number
+    아이템교차축맞춤
+    align-self:(flex-start,flex-end,center)
+    
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>Document</title>
+    <style>
+        .box{
+            width:1000px;
+            height:500px;
+            margin:100px auto;
+            border:1px solid black;
+            padding:10px;
+            display:flex;
+            flex-flow:row wrap;
+            justify-content:space-around;
+            align-content:space-evenly;
+        }
+        span{
+            width:150px;
+            height:150px;
+            border:1px solid red;
+            display:flex;
+            flex-flow:row nowrap;
+            justify-content:center;
+            align-items:center;
+        }
+        .span01{order:1;}
+        .span02{order:2;}
+        .span03{order:10;}
+        .span04{order:4;}
+        .span05{order:5;}
+        .span06{order:6;}
+        .span07{order:7;}
+        .span08{order:8;}
+        .span09{order:9;}
+        .span10{order:3;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="span01">1</span>
+        <span class="span02">2</span>
+        <span class="span03">3</span>
+        <span class="span04">4</span>
+        <span class="span05">5</span>
+        <span class="span06">6</span>
+        <span class="span07">7</span>
+        <span class="span08">8</span>
+        <span class="span09">9</span>
+        <span class="span10">0</span>
+    </div>
+</body>
+</html>
