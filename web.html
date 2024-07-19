@@ -34,6 +34,7 @@
             margin-bottom:24px;
             font-weight:700;
             font-size:3em;
+            color:darkblue;
         }
         .header nav{
             width:100%;
@@ -52,11 +53,21 @@
             border-bottom:2px solid black;
             padding:80px 0;
         }
+        .sec .container{
+            display:flex;
+            flex-flow:row wrap;
+        }
+        .sec h2{
+            margin-bottom:1em;
+            font-weight:500;
+            font-size:2em;
+        }
 
 
 
         .footer{
             padding:20px 0;
+            text-align:center;
         }
 
 
@@ -75,13 +86,22 @@
             }
             .header ul li{
                 width:auto;
+                margin-left:2em;
             }
         }
 
 
         /* 데스크탑 */
         @media (min-width:960px){
-            
+            .sec h2{
+                flex:1;
+                /* width:calc(25% - 12px); */
+                margin-right:24px;
+            }
+            .sec p{
+                flex:3;
+                /* width:calc(75% - 12px); */
+            }
         }
     </style>
 </head>
@@ -101,10 +121,15 @@
             </div>
         </header>
         <section class="sec">
-            <div class="container"></div>
+            <div class="container">
+                <h2>WEB이란<br>무엇인가?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia architecto assumenda nesciunt culpa veritatis repellat reiciendis ipsa consequuntur unde inventore in voluptatum quas alias saepe labore facilis asperiores laborum, quisquam, quasi dicta similique amet? Ipsa dicta culpa, eum omnis blanditiis asperiores! Veniam veritatis fugiat, eius vero architecto nulla atque! Minima fugiat aliquam unde perspiciatis voluptatum, explicabo laborum animi modi doloremque repellendus earum magnam corporis! Illo ullam beatae eum illum blanditiis quibusdam molestiae placeat asperiores quisquam atque eligendi sunt architecto aliquid, quidem cumque officia excepturi culpa ex vero in nesciunt. Quos sequi excepturi veniam porro rerum maxime obcaecati a suscipit enim?</p>
+            </div>
         </section>
         <footer class="footer">
-            <div class="container"></div>
+            <div class="container">
+                COPYRIGHT Mr. JO
+            </div>
         </footer>
     </section>
 </body>
